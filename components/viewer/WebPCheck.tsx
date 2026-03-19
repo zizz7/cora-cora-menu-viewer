@@ -3,18 +3,19 @@
 import { useEffect, useState } from "react";
 
 /**
- * Detects WebP support using a canvas-based feature check.
- * Returns true if the browser can encode WebP via canvas.toDataURL.
+ * Detects WebP support by loading a tiny 1×1 WebP image.
+ * This is reliable across all browsers including iOS Safari,
+ * which supports WebP decoding but not WebP canvas encoding.
  */
-function detectWebPSupport(): boolean {
-  try {
-    const canvas = document.createElement("canvas");
-    canvas.width = 1;
-    canvas.height = 1;
-    return canvas.toDataURL("image/webp").startsWith("data:image/webp");
-  } catch {
-    return false;
-  }
+function detectWebPSupport(): Promise<boolean> {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = () => resolve(img.width === 1 && img.height === 1);
+    img.onerror = () => resolve(false);
+    // 1×1 white lossy WebP
+    img.src =
+      "data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA";
+  });
 }
 
 /**
@@ -25,7 +26,7 @@ export default function WebPCheck({ children }: { children: React.ReactNode }) {
   const [supported, setSupported] = useState<boolean | null>(null);
 
   useEffect(() => {
-    setSupported(detectWebPSupport());
+    detectWebPSupport().then(setSupported);
   }, []);
 
   // Still checking — render children optimistically
