@@ -25,6 +25,13 @@ export interface MenuManifest {
   pages: ManifestPage[];
 }
 
+/** A language variant of a menu */
+export interface MenuVariant {
+  lang: string;
+  label: string;
+  slug: string;
+}
+
 /** Lightweight metadata shown on the Bookcase landing page. */
 export interface MenuMeta {
   slug: string;
@@ -39,4 +46,16 @@ export interface MenuMeta {
   subtitle?: string;
   /** Whether this is a featured/premium book (larger, gold accents) */
   featured?: boolean;
+  /** Restaurant this menu belongs to */
+  restaurant?: string;
+  /** Language variants — if present, viewer shows a language picker */
+  variants?: MenuVariant[];
+}
+
+/** Restaurant definition */
+export interface Restaurant {
+  slug: string;
+  name: string;
+  tagline: string;
+  menus: MenuMeta[];
 }

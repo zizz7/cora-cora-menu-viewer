@@ -1,0 +1,30 @@
+{
+  "menuSlug": "teien-teppanyaki",
+  "pageCount": 3,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoUABwAPwVwrVArpqQisAwBcCCJZwAAioMDWn3IBOdi6bFAAP7unjxHgZuxY4GqqT6Wt4guPm9aHblCWS9WTnBJ+xId3/G55vhlKA+2NNO2XzBqHvhKgL3tkFAAAA==",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACQBACdASoUABwAPxFyr1AsJqQisAgBgCIJZwDE2B4cD+jpzGY/i4E6wV0AWQAA/sluOy0h/BH12SGT28tvirY+mBRNoL+Y0es8So3AHpWyxS/pxq3WMITzSQoRQAAA",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    },
+    {
+      "pageNum": 3,
+      "width": 1191,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQBACdASoUABwAPxF2slIsJySisBgIAYAiCWcAxgQPDgf0dOZbN73nLVoAAP7JbjstIfwSJ1CP0FfKbZWVspUafpgkOgh+xzeOnxwnR/7Ier5DSmkEYQI7NZHfE+5ZsjbktvMzIAA=",
+      "mobile": "page-03-800w.webp",
+      "desktop": "page-03-1400w.webp"
+    }
+  ]
+}

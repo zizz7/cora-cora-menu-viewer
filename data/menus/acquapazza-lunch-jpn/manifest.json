@@ -1,0 +1,30 @@
+{
+  "menuSlug": "acquapazza-lunch-jpn",
+  "pageCount": 3,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABwBACdASoUABwAPxF2slAsJ6SisAgBgCIJaADDcGt/+e+DPcKGzYxDaFxhAAD++M90Bv/XwqiGcELSmjI9DQ9o48MCcEczo8IH5eWwn5TpIpQI5hc7FODvLVhrUykCrCYBTLklR3YnZFRIhr4jxUUEIl0i0YRY8XBKqnnaENlss+/hf07MfPc7VBD6qwiwwD2uSuxkoVMw8AAA",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAQBQCdASoUABwAPw1qr1AsJaQit/VYAYAhiWIAw3BHbcl/BcsBLDSQ7DKCisy4aqYAAP7onMXzXVC+8VcR8lMN3XOlcTICwl7ZU5J/+AB94gK1WI9tE2Gj1caOpXphW3Y24+cxH72W1sS8BHz7ZiYGdfFiDMAMtFht6QXRMEyT8foleMLVGXn87ESVpYxdv+DM9CYTkGSrAAAA",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    },
+    {
+      "pageNum": 3,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAQBQCdASoUABwAPxF2rlCsJ6QisBgMAYAiCWQAv+xYSjDG48O++yuSAJGSbBVCr1gAAP7zxBDVc41LMXgjd45F1+NM/Z0mNin9CGcjInTvVPsl8v/XXWp1vz4tPNTguLbKbzP4odhbM/e4x4W3n6QllbpvNtRu4G4LNsg2TUrVIetlHyrxguKiZIAAAA==",
+      "mobile": "page-03-800w.webp",
+      "desktop": "page-03-1400w.webp"
+    }
+  ]
+}

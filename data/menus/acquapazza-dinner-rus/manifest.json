@@ -1,0 +1,30 @@
+{
+  "menuSlug": "acquapazza-dinner-rus",
+  "pageCount": 3,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABwBQCdASoUABwAPw1yslAsJySisBgMAYAhiWYAyhH6oJ9UbLxUMzZuogKkoxwEd5EeWhgAAP6x2Cr41cf8RrUsd+OwU2Z3GqTvOEQuPSQLLzVUJ3495eeziBjZ0L5eEV4nZgtOMSLY9p6xrrur8M8siCLn8vawjKck6I77W9jtcwHkJM6iuvRrD+PPMzVgibr2I9aIFYrtrjRoedPixD6seHNaAAAA",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAQBQCdASoUABwAPw1sr1AsJaQit/VYAYAhiWYAx+RHUALNtspIYFWrjUmNwOczDuUAAP6REJdcv6S3sl/430LhzCkI9mTC0/kBefskjo2EIlwiR1LHENnKrT9m1CriwU3UKE910VIDOW6aALbP9EBKNXyj1fztEA6WOXzzN8E6iUXSUMUN+BK/NshKPp6HfDFIr9c9G7EOIAAA",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    },
+    {
+      "pageNum": 3,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAACwBQCdASoUABwAPxFyrVEsJqQisBgMAYAiCWYAzD0AugOfVBNRoa2m+0G8QFApwLgDsOBjhfwA/sX1z6Lnm9gDB1qy5oRCrL/cofY3mxcNr9aQGUneBL5U0a7zZfYTWAZH9zpqAuezQmSMjLhS2iPmizOg2orUnDNqM5SVSV5a0GfVc+OawBpvSWmfCF4oyfp8X6AiPX3E2OsaM8oXAAAA",
+      "mobile": "page-03-800w.webp",
+      "desktop": "page-03-1400w.webp"
+    }
+  ]
+}

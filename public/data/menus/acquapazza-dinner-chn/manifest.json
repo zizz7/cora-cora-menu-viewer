@@ -1,0 +1,30 @@
+{
+  "menuSlug": "acquapazza-dinner-chn",
+  "pageCount": 3,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABwBQCdASoUABwAPxF+tFQsKCSjKAqpgCIJZgDKADXoDDuv+EZoGjYwk0a0kySlF0II0qQAAP6x2Cr41cf8TEmzM++Xfc9WL6Zk33BKTBjXS/YAczNqGQDJ93oMUTz+FrrwYs6xevo8CkPCl8kgm6hLs2UTe4t+WeifqFTQ7M6EB2Pyev8ss7zpjvCP4PlohzFYOzM61MJJxrUnaBT4MoS0s38OMTwHAzQxPDSAAAA=",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADQBQCdASoUABwAPxF4sVIsJySiqA1RgCIJZgDH9f/gfePFEx10pEsTp9YGEyVQjzozHKmzWobwAP6x2CzS4OwlqoeGI0wNDJ+FHt+TtJlfuH4jHd4KJhAgAK78cLAO8yM6TlWLdCNzBF8Wxto488x0mTjKCybkpw+e+c9jxDCQV+DvRa1O6ByExNweksYt+E5ZYJAM/45Lilgl1VAu3e2TjLopwLh7sDa0/fxAAAA=",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    },
+    {
+      "pageNum": 3,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAQBgCdASoUABwAPxF4slIsJySiqA1RgCIJZgDLTKt6g59sDzxmFI2s2tcBh4BCVW2QYwDpVNuehaQA/rIomni3z3aIfx7kIuY/UpZDo6ZSBhQEgi25mNQSwboAZfUShInj4jScydqW9mVnE8IywWzp2tv01jOa1zizy49C3uR+ebemzElNd7COgmTmEoD4NlbNHk+QM9U7LBGbJG39PVnWtwPtbUxgAAA=",
+      "mobile": "page-03-800w.webp",
+      "desktop": "page-03-1400w.webp"
+    }
+  ]
+}

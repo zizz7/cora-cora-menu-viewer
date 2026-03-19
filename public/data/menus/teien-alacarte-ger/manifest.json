@@ -1,0 +1,62 @@
+{
+  "menuSlug": "teien-alacarte-ger",
+  "pageCount": 7,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 875,
+      "height": 2415,
+      "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBQCdASoUADcAPxF2rVIsJySirBqsyYAiCWUAzUgVClbrElbhjwJYnVXmwo8az9wNwAD+6T/fbux+GeaM0pxgJ6HR9kz2DRv4bmL47mGYmO6MQFhOesK81RbTtVBly0yOSBICq+pUpmHibbTNApFU+MYEW6BE8UwMyTSMI8gr9duzOAA=",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 875,
+      "height": 2415,
+      "lqip": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAACwBgCdASoUADcAPxGAs1OsKKSirBqoAYAiCWUAzJeAiGShB89oGFRkOR/aesxYKTQqnvtas+JrIYX/tLB4AAD+w8FfmWnUNHUwU7XO7/uEZ1m3D1EJZsliIxiw/36ZiBU0ODdV7SGbTkbzizPZB+g/HNpQ+ktbYjkTAENFkhSrplY0rNUhlrFPxdlFjtvnjWgmTgN8VxbbEyJx4fkLlMr2+wCAaZBAlT7vTzQ89yPm/3UdtACjhHdFAeJ2FfQ1WOwijTjpxmExd9z2/FfP9z4LjnhxMpXZJuRgwZnxRxrUGOAZ7Q4UAAAA",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    },
+    {
+      "pageNum": 3,
+      "width": 875,
+      "height": 2415,
+      "lqip": "data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAADQBgCdASoUADcAPxF8s1MsJ6SirAgBgCIJZwDLa33vC1L/jFh3UNE7KmOdO0tbQELVBEERsVhKI64DvyyDAAAA/sO29DcNKuelfonU2Bgebx5dFxKW/akLfA6KFZWiM89d2QMT8SUfJTkukvSi3602RLxGbzJyn9iAlvjWxs8gxYPNVkME+CI4zJmNYVRKNwpVLXUilThEDqYDrSUkLl/sQoksH6jKcYHr8RKGotztMWKsNI9tuN9l2HVqfbJVPAP3ENzzqRfkeubVi3NGofT9apcoZo62c1XEAEcD4kpThgzIyzXEMAAA",
+      "mobile": "page-03-800w.webp",
+      "desktop": "page-03-1400w.webp"
+    },
+    {
+      "pageNum": 4,
+      "width": 875,
+      "height": 2415,
+      "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAABQBgCdASoUADcAPxF4tVGsJyUjrAmZgCIJZQDRgy6BSt9l/0JhU9ndY6u6ljTC2XWdLBnnkAN4qlLEAAD+w1UZtXBVvkWM/N0BhPhE6etk5ghD8KsGhiNJb3Icw5jIQy/+IuMqATbLCGOxRWd++mVs8/EFb5qs5+lJ4TX3qujEh7AIhmKGhvWZxchs6AYf8zbTGyb58mJ7LoSeJPlK6b75b/JvdBJsbRh9lbdA9+rdyIeVWGJnMTMmWI4ZaT+AAAA=",
+      "mobile": "page-04-800w.webp",
+      "desktop": "page-04-1400w.webp"
+    },
+    {
+      "pageNum": 5,
+      "width": 875,
+      "height": 2415,
+      "lqip": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAABwBgCdASoUADcAPw1or1AsJaQisBv8AYAhiUAZXgKlkasWO7g/zV4NfEkSpInYkHiW5tm4B9XOB3l6s6gA/sPZyaCVXm0FOPOFponv5c8ev6ltvwcnqWbu1ydbyV23peZ2W+PGznw6mz0xJimrS5pFoeFPJlLPPYrgDKmcmKo6nKFUyK5A0ie6ZCHqKZWQqB5Tt9SKn+/9JdIkoh0XI9XoekPlrvx24JBVV/2sPiGi35Jx0Eq9uT/OcXIs9LHzrC7aUCO5r4AAAA==",
+      "mobile": "page-05-800w.webp",
+      "desktop": "page-05-1400w.webp"
+    },
+    {
+      "pageNum": 6,
+      "width": 875,
+      "height": 2415,
+      "lqip": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACQBQCdASoUADcAPxGCt1SsKSUkKBgKqYAiCWcAyngIXXh/jDv7o0fV41aYSUweD7SGs5XgAAD+w1k9adCsMwHnfBEPPuntuhHaj54QtBFqQtXqqXvliuFb5/EUa+7LVZwOOUc2iO7REP9BY4KrlWy9aVWeaW738priURnLWC0tZhi5mFhtLTVzASZ/Qw+TpRVzf1+ZCI5ZrdWNlhvj4v1gT4Kyihm+tb3hZAKTRTVv/tf/P+K0sqQcAAA=",
+      "mobile": "page-06-800w.webp",
+      "desktop": "page-06-1400w.webp"
+    },
+    {
+      "pageNum": 7,
+      "width": 875,
+      "height": 2415,
+      "lqip": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAAAwBgCdASoUADcAPxGAtlSsKCUkKBgKqYAiCWcAzFst4VEe8Ba+FyEADEcUuRkOAg1isDFDifDfT4oAAP7DVRg1bdndV1or0nTlXbmCYAKxc13svBNX6pLJ2JY8/AGcNajEIfRDmeDXaJqJiKgFwIQNKjGNBPRcRomRuvxrQvEBmvgUws2d8iROMQCubqpVHxmSMY+WtKXv+DmYtCe/PQ/2KHy3o0vT2kRcXsIy7NWr1hGRwWQAMFmNUdV5VqqohXBxXu85wW61n99BOYAAAA==",
+      "mobile": "page-07-800w.webp",
+      "desktop": "page-07-1400w.webp"
+    }
+  ]
+}

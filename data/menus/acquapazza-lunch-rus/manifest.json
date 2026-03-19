@@ -1,0 +1,30 @@
+{
+  "menuSlug": "acquapazza-lunch-rus",
+  "pageCount": 3,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADwBACdASoUABwAPxF+s1IsKKSisBgIAYAiCWgAw3Brf/yV7rDDHDmBcZUWrZCV4SAA/vYwd+SBXPjUjqpew3Ki7F2+dsMMIdlLk/0bDyLkroiAbN8+gqymDqh4mv76c7zIqT1Ge2ECXJKjuwwqJRT7iaKsh68NYWIvj8d9EEjzB7Zl+va2S6Q3VPPgm0rsO4aMPXOYTpNKxGc3rdsQyAAA",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBQCdASoUABwAPwlwrVArpqQit/VYAXAhCWIAx+RHbcfAKuyiuvG1s2ofggbESxQogAD+6JtJ59uBNU9mM03gIDx8zT649IkEiVECjlqKGZPirkcGELc+iY8zIGZyBl2Js6wgO5mJUs2dtEAzEQUV0GeQRummOO70fL0WG3oziHCgJAFsXZ+MSMLIkvWIyH1NI1SahWiAAA==",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    },
+    {
+      "pageNum": 3,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAQBQCdASoUABwAPwVyr1ArpySisAwBcCCJZADCgFhVd6+7lJWWI0I1IH8N4Te8dlnAAP7yLwI5vUkxzNMQDa4wA8GZBh7hFiUAsIqh+j5/+hYgXjURfRNLPqkgDKvuAnONXMzefWIaD9RPp6v9xZ96aPTElEFTvnK7H41hykl47EIrp/g5YS1vYsv0URbPlM0goAAA",
+      "mobile": "page-03-800w.webp",
+      "desktop": "page-03-1400w.webp"
+    }
+  ]
+}

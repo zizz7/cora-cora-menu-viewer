@@ -1,0 +1,22 @@
+{
+  "menuSlug": "mycoffee-menu",
+  "pageCount": 2,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1224,
+      "height": 1717,
+      "lqip": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAAAQBQCdASoUABwAPxF6s1QsJ6QjKAqpgCIJbACdMoJYsARM3LqkN2lCcPp47OYPsH4AAPz4S2u06OYGWxxbC8ZJLuXEMGaHg5Z3PwrmAYeu4r3k5Ji1za1dP2eqTs/ZnAc5mjwuS7FgjiKQ5r3S4sBZl5Rw/7413AbMRjYi2wOYzXwkCviF4wk9yKwdV6whrfLZmlNCx8Ra82dcGS2su7TXP8uLxU5fCbPMRBT3xIKek/7P8jR7bay+bng4oAAA",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 7090,
+      "height": 6514,
+      "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACwBACdASoUABIAPxF0slEsJqSiqA1RgCIJagCdMzLpORmAQMtgE/gLUe3lQoAAAP6aFXY3+MeUZ0OffK5yuEFQIBB6i5S2aBTuxj4okGl2Z1cC0bif3O0gTh+GSAZ0AYxxe59iZ/4m+Iv6h4kwXuAslbjRNvxpcd+WxVH+cyiiTPWsunu9uiAA",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    }
+  ]
+}

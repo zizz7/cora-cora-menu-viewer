@@ -185,4 +185,11 @@ async function main() {
   }
 }
 
-main();
+// Only run CLI when this file is the direct entry point
+const isDirectRun =
+  process.argv[1]?.replace(/\\/g, "/").endsWith("scripts/process-pdf.ts") ||
+  process.argv[1]?.replace(/\\/g, "/").endsWith("scripts/process-pdf");
+
+if (isDirectRun) {
+  main();
+}

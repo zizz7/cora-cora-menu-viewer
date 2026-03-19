@@ -8,6 +8,10 @@ interface ViewerPageProps {
   params: Promise<{ slug: string }>;
 }
 
+/**
+ * Legacy route — kept for backward compatibility with existing QR codes
+ * pointing to /menu/beverage etc.
+ */
 export default async function ViewerPage({ params }: ViewerPageProps) {
   const { slug } = await params;
 
@@ -16,12 +20,17 @@ export default async function ViewerPage({ params }: ViewerPageProps) {
     notFound();
   }
 
+  const defaultSlug =
+    menu.variants && menu.variants.length > 0
+      ? menu.variants[0].slug
+      : menu.slug;
+
   let manifest;
   try {
-    manifest = loadManifest(slug);
+    manifest = loadManifest(defaultSlug);
   } catch (err) {
     throw new Error(
-      `Failed to load manifest for menu "${slug}": ${err instanceof Error ? err.message : String(err)}`
+      `Failed to load manifest for menu "${defaultSlug}": ${err instanceof Error ? err.message : String(err)}`
     );
   }
 
@@ -31,6 +40,7 @@ export default async function ViewerPage({ params }: ViewerPageProps) {
         manifest={manifest}
         menuTitle={menu.title}
         cdnBaseUrl="/data"
+        variants={menu.variants}
       />
     </WebPCheck>
   );
