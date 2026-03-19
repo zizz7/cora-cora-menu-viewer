@@ -6,73 +6,127 @@ import type { MenuMeta } from "@/types/menu";
 
 interface BookCardProps {
   menu: MenuMeta;
+  comingSoon?: boolean;
 }
 
-const cardVariants = {
-  rest: { y: 0, rotate: 0 },
-  hover: { y: -8, rotate: -1 },
-};
+export default function BookCard({ menu, comingSoon }: BookCardProps) {
+  const isFeatured = menu.featured && !comingSoon;
+  const bookColor = menu.color || "#00C4B3";
 
-const badgeVariants = {
-  rest: { opacity: 0 },
-  hover: { opacity: 1 },
-};
-
-export default function BookCard({ menu }: BookCardProps) {
-  return (
-    <Link href={`/menu/${menu.slug}`} className="block">
-      <motion.div
-        className="relative cursor-pointer overflow-hidden"
+  const inner = (
+    <motion.div
+      className="relative flex flex-col items-center justify-end overflow-hidden"
+      style={{
+        width: isFeatured ? 140 : 110,
+        height: isFeatured ? 200 : 170,
+        background: isFeatured
+          ? `linear-gradient(135deg, #1a1a2e 0%, #0d0d1a 100%)`
+          : `linear-gradient(135deg, ${bookColor} 0%, ${bookColor}cc 100%)`,
+        borderRadius: "3px 8px 8px 3px",
+        boxShadow: comingSoon
+          ? "2px 4px 12px rgba(0,0,0,0.3)"
+          : "4px 6px 20px rgba(0,0,0,0.5), inset 6px 0 12px rgba(0,0,0,0.25)",
+        opacity: comingSoon ? 0.45 : 1,
+        cursor: comingSoon ? "default" : "pointer",
+      }}
+      whileHover={
+        comingSoon
+          ? {}
+          : { y: -20, rotate: 1, scale: 1.02 }
+      }
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+    >
+      {/* Spine shadow */}
+      <div
+        className="absolute left-0 top-0 bottom-0 w-4"
         style={{
-          aspectRatio: "3 / 4",
-          borderRadius: "4px 10px 10px 4px",
-          boxShadow: "inset 6px 0 12px rgba(0, 0, 0, 0.35)",
+          background:
+            "linear-gradient(to right, rgba(0,0,0,0.35) 0%, transparent 100%)",
         }}
-        initial="rest"
-        whileHover="hover"
-        animate="rest"
-        variants={cardVariants}
-        transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      >
-        {/* Cover image — native img for loading="lazy" per spec */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={menu.coverUrl}
-          alt={menu.title}
-          loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+      />
 
-        {/* Spine shadow overlay */}
-        <div
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 15%)",
-          }}
-        />
+      {/* Top pages edge */}
+      <div
+        className="absolute top-0 left-3 right-1 h-2"
+        style={{
+          background:
+            "repeating-linear-gradient(to right, rgba(255,255,255,0.08) 0px, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 3px)",
+          borderRadius: "0 2px 0 0",
+        }}
+      />
 
-        {/* Bottom info bar */}
-        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3 pt-8">
-          <h3 className="font-heading text-sm font-semibold leading-tight text-cream">
-            {menu.title}
-          </h3>
-          <p className="font-mono text-xs text-cream-muted">
-            {menu.pageCount} pages
+      {/* Featured gold accents */}
+      {isFeatured && (
+        <>
+          <div
+            className="absolute top-3 left-3 right-3 h-px"
+            style={{ background: "linear-gradient(90deg, transparent, #D4A853, transparent)" }}
+          />
+          <div
+            className="absolute bottom-12 left-3 right-3 h-px"
+            style={{ background: "linear-gradient(90deg, transparent, #D4A853, transparent)" }}
+          />
+          {/* Star bookmark */}
+          <div className="absolute top-0 right-4 flex flex-col items-center">
+            <div
+              className="w-6 h-8 flex items-end justify-center pb-0.5"
+              style={{
+                background: "#D4A853",
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%)",
+              }}
+            >
+              <span className="text-[8px] text-black leading-none" style={{ marginBottom: 4 }}>★</span>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* Book text */}
+      <div className="relative z-10 p-3 pb-4 text-center w-full">
+        <p
+          className="font-heading text-xs font-bold leading-tight text-white"
+          style={{ textShadow: "0 1px 3px rgba(0,0,0,0.5)" }}
+        >
+          {menu.title}
+        </p>
+        {menu.subtitle && (
+          <p className="font-body text-[10px] mt-0.5 text-white/70">
+            {menu.subtitle}
           </p>
-        </div>
+        )}
+      </div>
 
-        {/* Hover badge overlay */}
+      {/* Hover tooltip */}
+      {!comingSoon && (
         <motion.div
-          className="absolute inset-0 flex items-center justify-center bg-black/30"
-          variants={badgeVariants}
+          className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0"
+          whileHover={{ opacity: 1 }}
           transition={{ duration: 0.2 }}
         >
-          <span className="rounded-full bg-amber px-4 py-1.5 font-body text-sm font-semibold text-forest">
-            View Menu
+          <span className="font-body text-xs font-semibold text-white flex items-center gap-1">
+            Open Menu <span className="text-sm">→</span>
           </span>
         </motion.div>
-      </motion.div>
+      )}
+
+      {/* Coming soon label */}
+      {comingSoon && (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <span className="font-body text-[10px] font-semibold text-white/60 bg-black/30 px-2 py-0.5 rounded">
+            Coming Soon
+          </span>
+        </div>
+      )}
+    </motion.div>
+  );
+
+  if (comingSoon) {
+    return <div className="flex justify-center">{inner}</div>;
+  }
+
+  return (
+    <Link href={`/menu/${menu.slug}`} className="flex justify-center">
+      {inner}
     </Link>
   );
 }

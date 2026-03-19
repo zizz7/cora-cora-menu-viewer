@@ -33,4 +33,10 @@ export interface MenuMeta {
   pageCount: number;
   /** Path to the cover image (e.g. "/data/menus/beverage/cover.webp") */
   coverUrl: string;
+  /** Spine/cover color for the book on the shelf */
+  color?: string;
+  /** Subtitle shown on the book spine */
+  subtitle?: string;
+  /** Whether this is a featured/premium book (larger, gold accents) */
+  featured?: boolean;
 }

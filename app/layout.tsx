@@ -1,18 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, DM_Sans, DM_Mono } from "next/font/google";
+import { Epilogue, Manrope, DM_Mono } from "next/font/google";
 import ServiceWorkerRegistrar from "@/components/ServiceWorkerRegistrar";
 import "./globals.css";
 
-const cormorantGaramond = Cormorant_Garamond({
+const epilogue = Epilogue({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["400", "600", "700", "800"],
   variable: "--font-heading",
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-body",
   display: "swap",
 });
@@ -32,7 +32,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Cora Cora Maldives - Menu",
+  title: "Cora Cora Maldives - Menus",
   description: "Digital menu viewer for Cora Cora Maldives",
 };
 
@@ -44,9 +44,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorantGaramond.variable} ${dmSans.variable} ${dmMono.variable}`}
+      className={`${epilogue.variable} ${manrope.variable} ${dmMono.variable}`}
     >
-      <body className="font-body bg-forest text-cream">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"
+        />
+      </head>
+      <body className="font-body bg-surface text-on-surface">
         <ServiceWorkerRegistrar />
         {children}
       </body>

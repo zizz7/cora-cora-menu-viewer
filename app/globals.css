@@ -3,13 +3,65 @@
 @tailwind utilities;
 
 :root {
+  /* Legacy colors (viewer pages) */
   --color-forest: #1A3C2E;
   --color-amber: #E8A838;
   --color-cream: #F9F6F0;
   --color-cream-muted: rgba(249, 246, 240, 0.4);
   --color-header-bg: rgba(26, 60, 46, 0.92);
   --color-header-border: rgba(232, 168, 56, 0.15);
-  --font-heading: 'Cormorant Garamond', serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-heading: 'Epilogue', sans-serif;
+  --font-body: 'Manrope', sans-serif;
   --font-mono: 'DM Mono', monospace;
+}
+
+/* === Bookshelf Styles === */
+
+.shelf-section {
+  background:
+    linear-gradient(180deg, #2C1810 0%, #3E2723 40%, #4E342E 100%);
+  position: relative;
+}
+
+.shelf-plank {
+  height: 18px;
+  background: linear-gradient(180deg, #5D4037 0%, #4E342E 40%, #3E2723 100%);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.5),
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  border-radius: 0 0 2px 2px;
+  position: relative;
+}
+
+.shelf-plank::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.vignette-overlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 40%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+.spotlight-effect {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(255, 220, 150, 0.06) 0%,
+    transparent 60%
+  );
 }
