@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useLazyLoad } from "@/hooks/useLazyLoad";
 
 export interface MenuPageProps {
   pageNum: number;
@@ -31,7 +30,6 @@ export default function MenuPage({
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { isNear, observerRef } = useLazyLoad(priority);
 
   // IntersectionObserver to report visibility
   useEffect(() => {
@@ -80,10 +78,7 @@ export default function MenuPage({
 
   return (
     <div
-      ref={(node) => {
-        (containerRef as React.MutableRefObject<HTMLDivElement | null>).current = node;
-        (observerRef as React.MutableRefObject<HTMLDivElement | null>).current = node;
-      }}
+      ref={containerRef}
       data-page={pageNum}
       className="relative w-full overflow-hidden"
       style={{ aspectRatio: `${aspectRatio}` }}
@@ -101,8 +96,10 @@ export default function MenuPage({
         }}
       />
 
-      {/* Full resolution image — gated by IntersectionObserver proximity */}
-      {isNear && !error && (
+      {/* Full resolution image — virtual scroll already limits DOM to ~6 pages,
+          so we always render the img when in window. Browser loading="lazy"
+          handles the rest. */}
+      {!error && (
         /* eslint-disable-next-line @next/next/no-img-element */
         <img
           key={`${mobileUrl}-${error}`}
