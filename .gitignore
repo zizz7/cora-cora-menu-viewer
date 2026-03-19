@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+deploy-railway.mjs
+deploy-step2.mjs
+deploy-step3.mjs
+deploy-upload.mjs
+railway-query.json

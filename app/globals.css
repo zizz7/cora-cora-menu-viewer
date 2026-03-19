@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-forest: #1A3C2E;
+  --color-amber: #E8A838;
+  --color-cream: #F9F6F0;
+  --color-cream-muted: rgba(249, 246, 240, 0.4);
+  --color-header-bg: rgba(26, 60, 46, 0.92);
+  --color-header-border: rgba(232, 168, 56, 0.15);
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
