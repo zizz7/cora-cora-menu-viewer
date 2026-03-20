@@ -159,6 +159,7 @@ export const RESTAURANTS: Restaurant[] = [
         variants: [
           { lang: "eng", label: "EN", slug: "acquapazza-lunch-eng" },
           { lang: "chn", label: "中文", slug: "acquapazza-lunch-chn" },
+          { lang: "ger", label: "DE", slug: "acquapazza-lunch-ger" },
           { lang: "jpn", label: "日本語", slug: "acquapazza-lunch-jpn" },
           { lang: "rus", label: "РУ", slug: "acquapazza-lunch-rus" },
         ],
@@ -175,6 +176,7 @@ export const RESTAURANTS: Restaurant[] = [
         variants: [
           { lang: "eng", label: "EN", slug: "acquapazza-dinner-eng" },
           { lang: "chn", label: "中文", slug: "acquapazza-dinner-chn" },
+          { lang: "ger", label: "DE", slug: "acquapazza-dinner-ger" },
           { lang: "jpn", label: "日本語", slug: "acquapazza-dinner-jpn" },
           { lang: "rus", label: "РУ", slug: "acquapazza-dinner-rus" },
         ],

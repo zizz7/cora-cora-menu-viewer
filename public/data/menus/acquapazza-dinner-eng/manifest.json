@@ -4,25 +4,25 @@
   "pages": [
     {
       "pageNum": 1,
-      "width": 1190,
-      "height": 1683,
-      "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACQBQCdASoUABwAPxFyrFCsJqQisBgMAYAiCWYAyhH/4F/UbDOpWHVU092rDA3ZT1GCs6zoAAD+kRCXXL+UWHV1Pg6+Y8PfjRPHjoMfCDRSHPPTpUt/1KD1B6S3MCn8CxML4HSZuTvCRWflcyrnA6vo/UFLec33aa3gW7t2QKWTd6U5epngIPq89UH+WiGFfkBpWrOwZRtJHwTsg8pZv3Oe7A3mrdjrAAA=",
+      "width": 1189,
+      "height": 1684,
+      "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAQBQCdASoUABwAPw1ws1AsJiUisBgMAYAhiWYAs4AIet24n+XrrdG0ebE/vta76iBwAP7G7ky14cyAWR8TRr/mKmBqacqFY0P7d0I8rMCb+aPXCAaMjE/W9wm7DtDQR7HIbh9V7G6CvBXkgdXI+gwjTurGx1L9q3j2I0iaUpiuKz2K1GOIUY6x5jqTRV30GFp7h1RAGuKpy3LssMPfhU/k3sAu8AAA",
       "mobile": "page-01-800w.webp",
       "desktop": "page-01-1400w.webp"
     },
     {
       "pageNum": 2,
-      "width": 1190,
-      "height": 1683,
-      "lqip": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBQCdASoUABwAPxF2s1CsJySiqA1RgCIJZgDKIQCJ/ggCkAaK1WI62ELkAbKiTrUH0Ch50eiAAAD+sdgq+NXH/Ea1LHfhrV16xcGaWbUJFprCMCWh2xCdbbPvrWWhj47Wu8wSa2Lnxo8DpM3J3gIx+VyX7Wi3UvQIUgNK03GMkv7ldI7RtHDynSQhHaZgW6ZyIAJ/xJ2/zpgewXx5RQJrtb4l6BboYEtkQHWAAAA=",
+      "width": 1189,
+      "height": 1684,
+      "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAwBQCdASoUABwAPwlurVArpqQit/VYAXAhCWYAs4AIlH9YEaRoG7+gI71ZM67+noYiAAD+xu5MteADO06DqONf9Wes7vl9HbcHNZf4enVnAv4in1J+xGKXTN8TdhZx4eJvDHVwoW14COwxiJ4UPcwifOofIfnT9OMMhl7v81pM0LgD8ofhMaWtx35FNasVENH0EnTigAr5AHEaLaZmXPHhSyZ/JvUpAAA=",
       "mobile": "page-02-800w.webp",
       "desktop": "page-02-1400w.webp"
     },
     {
       "pageNum": 3,
-      "width": 1190,
-      "height": 1683,
-      "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAwBgCdASoUABwAPxFusFAsJiSisBgMAYAiCWYAzPBeenef/BNO8TG71iwYvSDfLNm3UcLI7rPGJYAAAP6yKJp4t893HCgC1SZn4vrOvQXaCeX7302P4W2svOaXQqNGOrwUKENEfT6wZpgGMS8f+bbTTW0JPVG5lW6oneGhLzXZarcTN1HUEk3gKRJ+Ya9uxrN797TlVEtprOxskwO/B65Lx7NAAA==",
+      "width": 1189,
+      "height": 1684,
+      "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBQCdASoUABwAPxF0sFAsJySisBgMAYAiCWwAttn/4Bwza687YS8GdJOEmyL1QBC8AAD+xa4JFj0Csss/AlwWXxBo/qoX0+FObRiQPXKBs1MUnghxl5YYpwUC52PcH9Gjs775g529CY/A+y0C19gTEj3hGHaqzuehLqm2Inq+8iDcRu+iRPE60gVOkr0tj31mz/kNEZ06pE0PUqu9SYT8QAA=",
       "mobile": "page-03-800w.webp",
       "desktop": "page-03-1400w.webp"
     }

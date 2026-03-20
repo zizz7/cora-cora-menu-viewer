@@ -1,0 +1,30 @@
+{
+  "menuSlug": "acquapazza-lunch-ger",
+  "pageCount": 3,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACwBQCdASoUABwAPwlsrlArpaQit/VYAXAhCWgAwzRCF3mAYO6btExQtXZe8qo5LKj8Jt0EI8AA/rEImxIqoqRxJcIxSzA5Q5giA/A+epYT4kR2hqXdUCJ7EyODQTjMXI4w1j/MjucFdxsUBP/dqnzWjZCCvmNPgu3m3N8MiLK1CotfoB6R+pNI08HfiH754W31oCexXuH2f8fOelbKAlvhGnyiqwG4dnsz+LUcIephQ3PwKOfuAAAA",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABQBQCdASoUABwAPw1wslAsJiUisBgMAYAhiWgAv+wxPSJ96qq1xwJI2fkxSXbkmLCbYQAA/rEImxIf+bSUBedMUswE1pbejLm+2uFVq6GxmI3EywwfBdGyRHh7cy6EEqU9V9o2BrBAxcrbXt1pQd1GPzOAzA13wrGqEXxCXi68WrOuqVk7BmC8NSWy7xruZWLcFyhDfE0Hlsw4iea7pxzfBTE7wSghjKGbBAeCF/MgAA==",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    },
+    {
+      "pageNum": 3,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADwBACdASoUABwAPv1qq1ArJiQit/qoAWAfiWYAxxUgAq0BnzSI4qiD0Uz8ODESgAAA/tOfTLH3iBG3FhUtKf0Zy+rh7joq5ftYdqWBecyDgukoPfH/u07hh1q9nULJAd71wPE/N8sQMRxZZY4GnlQA0flVMooQGQDgxH1v4lCpOO754YojagUQmOY7SAAA",
+      "mobile": "page-03-800w.webp",
+      "desktop": "page-03-1400w.webp"
+    }
+  ]
+}
