@@ -53,7 +53,7 @@ export default function BookCard({ menu, href, logoUrl }: BookCardProps) {
         {logoUrl && (
           <div
             className="absolute inset-0 flex items-center justify-center pointer-events-none"
-            style={{ padding: "12px 14px 42px" }}
+            style={{ padding: "10px 14px 70px", paddingLeft: "20px" }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -66,7 +66,7 @@ export default function BookCard({ menu, href, logoUrl }: BookCardProps) {
         )}
 
         {/* Book text */}
-        <div className="relative z-10 p-3 pb-4 text-center w-full">
+        <div className="relative z-10 pb-3 pt-1 text-center w-full" style={{ paddingLeft: "18px", paddingRight: "8px" }}>
           <p
             className="font-heading text-xs font-bold leading-tight text-white"
             style={{ textShadow: "0 1px 3px rgba(0,0,0,0.5)" }}
