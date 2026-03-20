@@ -72,19 +72,9 @@ export const RESTAURANTS: Restaurant[] = [
   {
     slug: "tazaa",
     name: "Tazaa",
-    tagline: "International Buffet & À La Carte",
+    tagline: "All Day Dining",
     logoUrl: "/logos/tazaa.png",
     menus: [
-      {
-        slug: "tazaa-breakfast",
-        title: "Breakfast",
-        subtitle: "Menu",
-        category: "Dining",
-        pageCount: 0,
-        coverUrl: "/data/menus/tazaa-breakfast/cover.webp",
-        color: "#97CAEB",
-        restaurant: "tazaa",
-      },
       {
         slug: "tazaa-lunch",
         title: "Lunch",
