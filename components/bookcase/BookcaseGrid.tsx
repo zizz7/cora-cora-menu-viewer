@@ -6,9 +6,10 @@ import BookCard from "./BookCard";
 interface BookcaseGridProps {
   menus: MenuMeta[];
   restaurantSlug: string;
+  logoUrl?: string;
 }
 
-export default function BookcaseGrid({ menus, restaurantSlug }: BookcaseGridProps) {
+export default function BookcaseGrid({ menus, restaurantSlug, logoUrl }: BookcaseGridProps) {
   return (
     <div className="shelf-section rounded-xl mx-auto max-w-3xl overflow-hidden">
       <div className="vignette-overlay z-10" />
@@ -22,6 +23,7 @@ export default function BookcaseGrid({ menus, restaurantSlug }: BookcaseGridProp
               key={menu.slug}
               menu={menu}
               href={`/${restaurantSlug}/${menu.slug}`}
+              logoUrl={logoUrl}
             />
           ))}
         </div>

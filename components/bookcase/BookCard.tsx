@@ -7,9 +7,10 @@ import type { MenuMeta } from "@/types/menu";
 interface BookCardProps {
   menu: MenuMeta;
   href: string;
+  logoUrl?: string;
 }
 
-export default function BookCard({ menu, href }: BookCardProps) {
+export default function BookCard({ menu, href, logoUrl }: BookCardProps) {
   const isFeatured = !!menu.featured;
   const bookColor = menu.color || "#00C4B3";
 
@@ -85,6 +86,29 @@ export default function BookCard({ menu, href }: BookCardProps) {
               </div>
             </div>
           </>
+        )}
+
+        {/* Restaurant logo */}
+        {logoUrl && (
+          <div
+            className="absolute inset-x-0 flex items-center justify-center"
+            style={{
+              top: isFeatured ? "28px" : "20px",
+              height: isFeatured ? "70px" : "55px",
+              padding: "0 16px",
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={logoUrl}
+              alt=""
+              className="max-h-full max-w-full object-contain"
+              style={{
+                filter: "brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0,0,0,0.4))",
+                opacity: 0.85,
+              }}
+            />
+          </div>
         )}
 
         {/* Book text */}

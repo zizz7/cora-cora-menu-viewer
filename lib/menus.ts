@@ -18,6 +18,7 @@ export const RESTAURANTS: Restaurant[] = [
     slug: "teien",
     name: "Teien",
     tagline: "Japanese Fine Dining",
+    logoUrl: "/logos/teien.png",
     menus: [
       {
         slug: "teien-alacarte",
@@ -63,6 +64,7 @@ export const RESTAURANTS: Restaurant[] = [
     slug: "tazaa",
     name: "Tazaa",
     tagline: "International Buffet & À La Carte",
+    logoUrl: "/logos/tazaa.png",
     menus: [
       {
         slug: "tazaa-breakfast",
@@ -115,6 +117,7 @@ export const RESTAURANTS: Restaurant[] = [
     slug: "acquapazza",
     name: "Acquapazza",
     tagline: "Italian Cuisine",
+    logoUrl: "/logos/acquapazza.png",
     menus: [
       {
         slug: "acquapazza-lunch",
@@ -175,6 +178,7 @@ export const RESTAURANTS: Restaurant[] = [
     slug: "my-coffee",
     name: "My Coffee",
     tagline: "Coffee & Light Bites",
+    logoUrl: "/logos/my-coffee.png",
     menus: [
       {
         slug: "mycoffee-menu",
@@ -193,6 +197,7 @@ export const RESTAURANTS: Restaurant[] = [
     slug: "gingermoon",
     name: "Gingermoon",
     tagline: "Asian Fusion",
+    logoUrl: "/logos/gingermoon.png",
     menus: [
       {
         slug: "gingermoon-menu",

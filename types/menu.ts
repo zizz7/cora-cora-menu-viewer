@@ -57,5 +57,7 @@ export interface Restaurant {
   slug: string;
   name: string;
   tagline: string;
+  /** Path to the restaurant logo (e.g. "/logos/teien.png") */
+  logoUrl: string;
   menus: MenuMeta[];
 }

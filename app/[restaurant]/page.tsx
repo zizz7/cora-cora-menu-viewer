@@ -18,8 +18,14 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
     <main className="min-h-screen bg-surface">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-surface/95 backdrop-blur-sm border-b border-white/5">
-        <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-2">
-          <span className="material-symbols-rounded text-primary text-xl">menu_book</span>
+        <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={restaurant.logoUrl}
+            alt={restaurant.name}
+            className="h-8 w-auto object-contain"
+            style={{ filter: "brightness(0) invert(1)" }}
+          />
           <div>
             <h1 className="font-heading text-lg font-bold text-on-surface leading-tight">
               {restaurant.name}
@@ -42,7 +48,7 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
 
       {/* Bookshelf */}
       <section className="px-4 py-6">
-        <BookcaseGrid menus={restaurant.menus} restaurantSlug={restaurant.slug} />
+        <BookcaseGrid menus={restaurant.menus} restaurantSlug={restaurant.slug} logoUrl={restaurant.logoUrl} />
       </section>
 
       {/* Info hint */}
