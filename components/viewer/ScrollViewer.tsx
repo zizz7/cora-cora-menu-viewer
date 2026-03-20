@@ -9,6 +9,7 @@ import MenuPage from "./MenuPage";
 import { useVirtualScroll } from "@/hooks/useVirtualScroll";
 import { usePageTracker } from "@/hooks/usePageTracker";
 import { useSwipeDownClose } from "@/hooks/useSwipeDownClose";
+import { BASE_PATH } from "@/lib/basePath";
 
 export interface ScrollViewerProps {
   manifest: MenuManifest;
@@ -57,7 +58,7 @@ export default function ScrollViewer({
       setLoadingLang(true);
       try {
         const res = await fetch(
-          `/data/menus/${variant.slug}/manifest.json`
+          `${BASE_PATH}/data/menus/${variant.slug}/manifest.json`
         );
         if (!res.ok) throw new Error("Failed to load");
         const data = await res.json();

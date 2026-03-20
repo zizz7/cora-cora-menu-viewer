@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import type { MenuMeta } from "@/types/menu";
+import { BASE_PATH } from "@/lib/basePath";
 
 interface BookCardProps {
   menu: MenuMeta;
@@ -56,7 +57,7 @@ export default function BookCard({ menu, href, logoUrl }: BookCardProps) {
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={logoUrl}
+              src={`${BASE_PATH}${logoUrl}`}
               alt=""
               className="w-full h-full object-contain"
               style={{ filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.3))" }}

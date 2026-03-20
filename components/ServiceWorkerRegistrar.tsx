@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { BASE_PATH } from "@/lib/basePath";
 
 /**
  * Registers the Service Worker with graceful error handling.
@@ -14,7 +15,7 @@ export default function ServiceWorkerRegistrar() {
 
     async function register() {
       try {
-        await navigator.serviceWorker.register("/sw.js");
+        await navigator.serviceWorker.register(`${BASE_PATH}/sw.js`);
       } catch (err) {
         console.log(
           "Service Worker registration failed — app continues without offline caching:",

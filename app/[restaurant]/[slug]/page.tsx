@@ -3,6 +3,7 @@ import { loadManifest } from "@/lib/manifest";
 import { RESTAURANTS, getRestaurant } from "@/lib/menus";
 import ScrollViewer from "@/components/viewer/ScrollViewer";
 import WebPCheck from "@/components/viewer/WebPCheck";
+import { BASE_PATH } from "@/lib/basePath";
 
 interface ViewerPageProps {
   params: Promise<{ restaurant: string; slug: string }>;
@@ -37,7 +38,7 @@ export default async function ViewerPage({ params }: ViewerPageProps) {
       <ScrollViewer
         manifest={manifest}
         menuTitle={menu.title}
-        cdnBaseUrl="/data"
+        cdnBaseUrl={`${BASE_PATH}/data`}
         backUrl={`/${restaurantSlug}`}
         variants={menu.variants}
       />

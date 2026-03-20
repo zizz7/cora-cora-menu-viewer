@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { RESTAURANTS, getRestaurant } from "@/lib/menus";
 import BookcaseGrid from "@/components/bookcase/BookcaseGrid";
+import { BASE_PATH } from "@/lib/basePath";
 
 interface RestaurantPageProps {
   params: Promise<{ restaurant: string }>;
@@ -21,7 +22,7 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={restaurant.logoUrl}
+            src={`${BASE_PATH}${restaurant.logoUrl}`}
             alt={restaurant.name}
             className="h-8 w-auto object-contain"
           />
