@@ -16,7 +16,7 @@ import type { MenuMeta, Restaurant } from "@/types/menu";
 export const RESTAURANTS: Restaurant[] = [
   {
     slug: "teien",
-    name: "Teien",
+    name: "Teien®",
     tagline: "Japanese Fine Dining",
     logoUrl: "/logos/teien.png",
     menus: [
@@ -49,7 +49,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage",
+        title: "Premium All Inclusive Beverage Menu",
         subtitle: "",
         category: "Beverages",
         pageCount: 0,
@@ -59,7 +59,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage",
+        title: "Exclusive Beverage Menu",
         subtitle: "",
         category: "Beverages",
         pageCount: 0,
@@ -71,7 +71,7 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     slug: "tazaa",
-    name: "Tazaa",
+    name: "Tazäa®",
     tagline: "All Day Dining",
     logoUrl: "/logos/tazaa.png",
     menus: [
@@ -121,7 +121,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage",
+        title: "Premium All Inclusive Beverage Menu",
         subtitle: "",
         category: "Beverages",
         pageCount: 0,
@@ -131,7 +131,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage",
+        title: "Exclusive Beverage Menu",
         subtitle: "",
         category: "Beverages",
         pageCount: 0,
@@ -143,7 +143,7 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     slug: "acquapazza",
-    name: "Acquapazza",
+    name: "Acquapazza®",
     tagline: "Italian Cuisine",
     logoUrl: "/logos/acquapazza.png",
     menus: [
@@ -193,7 +193,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage",
+        title: "Premium All Inclusive Beverage Menu",
         subtitle: "",
         category: "Beverages",
         pageCount: 0,
@@ -203,7 +203,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage",
+        title: "Exclusive Beverage Menu",
         subtitle: "",
         category: "Beverages",
         pageCount: 0,
@@ -215,8 +215,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     slug: "my-coffee",
-    name: "My Coffee",
-    tagline: "Coffee & Light Bites",
+    name: "My Coffee®",
+    tagline: "Beverages & Snacks",
     logoUrl: "/logos/my-coffee.png",
     menus: [
       {
@@ -229,22 +229,12 @@ export const RESTAURANTS: Restaurant[] = [
         color: "#FFA168",
         restaurant: "my-coffee",
       },
-      {
-        slug: "grabandgo-menu",
-        title: "Grab & Go",
-        subtitle: "",
-        category: "Dining",
-        pageCount: 0,
-        coverUrl: "/data/menus/grabandgo-menu/cover.webp",
-        color: "#F89ABA",
-        restaurant: "my-coffee",
-      },
     ],
   },
   {
     slug: "gingermoon",
-    name: "Gingermoon",
-    tagline: "Asian Fusion",
+    name: "Ginger Moon®",
+    tagline: "Asian Cuisine",
     logoUrl: "/logos/gingermoon.png",
     menus: [
       {
@@ -259,13 +249,14 @@ export const RESTAURANTS: Restaurant[] = [
         variants: [
           { lang: "eng", label: "EN", slug: "gingermoon-menu-eng" },
           { lang: "chn", label: "中文", slug: "gingermoon-menu-chn" },
+          { lang: "ger", label: "DE", slug: "gingermoon-menu-ger" },
           { lang: "jpn", label: "日本語", slug: "gingermoon-menu-jpn" },
           { lang: "rus", label: "РУ", slug: "gingermoon-menu-rus" },
         ],
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage",
+        title: "Premium All Inclusive Beverage Menu",
         subtitle: "",
         category: "Beverages",
         pageCount: 0,
@@ -275,7 +266,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage",
+        title: "Exclusive Beverage Menu",
         subtitle: "",
         category: "Beverages",
         pageCount: 0,
@@ -287,8 +278,8 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     slug: "grab-and-go",
-    name: "Grab & Go",
-    tagline: "Quick Bites & Takeaway",
+    name: "Grab & Go®",
+    tagline: "Takeaway",
     logoUrl: "/logos/grab-and-go.png",
     menus: [
       {
