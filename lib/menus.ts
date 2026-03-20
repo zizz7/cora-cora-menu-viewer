@@ -211,7 +211,7 @@ export const RESTAURANTS: Restaurant[] = [
     menus: [
       {
         slug: "mycoffee-menu",
-        title: "Coffee",
+        title: "Beverages & Snacks",
         subtitle: "Menu",
         category: "Café",
         pageCount: 0,
