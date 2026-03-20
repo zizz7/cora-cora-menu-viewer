@@ -83,7 +83,7 @@ export default function ScrollViewer({
   const baseUrl = `${cdnBaseUrl}/menus/${manifest.menuSlug}`;
 
   return (
-    <div className="min-h-screen bg-forest">
+    <div className="min-h-screen bg-surface">
       <ViewerHeader
         title={menuTitle}
         currentPage={currentPage}
@@ -93,7 +93,7 @@ export default function ScrollViewer({
 
       {/* Language picker */}
       {variants && variants.length > 1 && (
-        <div className="sticky top-[52px] z-40 bg-surface/95 backdrop-blur-sm border-b border-white/5">
+        <div className="sticky top-[52px] z-40 bg-surface/95 backdrop-blur-sm border-b border-black/5">
           <div className="max-w-[900px] mx-auto flex items-center justify-center gap-1 py-2 px-4">
             {variants.map((v) => (
               <button

@@ -1,0 +1,46 @@
+{
+  "menuSlug": "grabandgo-menu",
+  "pageCount": 5,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 841,
+      "height": 2381,
+      "lqip": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAACwBgCdASoUADkAPw12rFAsJ6Qis/ZoAYAhiWIAxYwNhxV4N+df2OAmAPXD6XtzY5v8uu+cYXvU2xLeRa61QAD3DXKEp+vYZySyZrZ/UzuhVoX8z31DMAyTMk+sNlkHPuUSaJzP3/zEDp23p2qL+ZlOCCaGQF40JzmO9RLv1/gX7FDoMW2TiFywiLwMjoCs6VPl5rPc7qrCgHc1Fv4pWxaJrb34zNorvuFtej4+V7U+EPe2RF9wCEjCO8lvIXWzjdrgsWSqbJVBAAAA",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 841,
+      "height": 2381,
+      "lqip": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAACQBgCdASoUADkAPxF4slOsJyQirBVbMYAiCUAZ3YEDSnymE6CnGm7hDRz2iO6bebHpY5tDXvnPUIfJWKiAAMxLryii3Hn8HXHgxkVo2Rlc+RjvJBmjbxBNclzP1sy8fvjLPBiMfVcpIV6jPFWOW1OYLjGjh7Yrh9aF1CCMjk4X2lPWb9coRVmxnGBd7aWxaJrcAAY2udIg5yAi637zXIgd5rK3RedRhqGqS0ve5AzwPaNZqgaus484thbEUAmlG5o9T5gAAAA=",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    },
+    {
+      "pageNum": 3,
+      "width": 841,
+      "height": 2381,
+      "lqip": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAACwBQCdASoUADkAPxF+tVIsKKUirBVbMYAiCWMAyngG3o30EhBLtShCL5EHfLxhnlFQs+4u0MAA/sX8dZ3MlubW/WHKYVcydj4P+Lgrr4Kaq3nyYdxfPoWpXVh0b9dsGoOSHUrWZzQ9FZM+KfB5hqELqcYHlV14g6UoSbMg3cxntnSrfB2iewpBW/ZT5uXYfGm/YjzJSclwRPSPhCs7f3kXC8rgsLAXo57ZYFcgAAA=",
+      "mobile": "page-03-800w.webp",
+      "desktop": "page-03-1400w.webp"
+    },
+    {
+      "pageNum": 4,
+      "width": 841,
+      "height": 2381,
+      "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAQBgCdASoUADkAPwVmrFArpSQis/zKqXAgiWMAyRAjfSKdCwLRHm3h8fqQUqoziHuyjW1p+W+TGVgA/CGdp3Ub9OKTvTOJfG9l2yf5JvjlbkioEMr7+yHU4mdpOmqABasYombIbQWcMl7EN6FPHRqetCqsaff0CqsycRiHuzW67R7u5eMAbcaQR3QkPOWak0PCo7MYmlGmKNUQsJvLJtAA",
+      "mobile": "page-04-800w.webp",
+      "desktop": "page-04-1400w.webp"
+    },
+    {
+      "pageNum": 5,
+      "width": 841,
+      "height": 2381,
+      "lqip": "data:image/webp;base64,UklGRtwAAABXRUJQVlA4INAAAACwBQCdASoUADkAPxF0slIsJqSis/M4AYAiCUAZEwDsZ1CUFSY6Hct5amrNP1yBTC7DPngaIAAA/NEkHbFVuHxVki5rFybM/1eDR1fdzqQcMECbTIKZG7faadaquZ061F0XHugE32wL2ZIs16tOmvpkamHRfbWe3ZIO/mi3FVN8RaOuoqCrgUgKvCnFI3OwtxKADzT5VgkP/koAp8IL5tvjA8+thv+pj1i9i0gDLmVkFTTrYS5a+wpA+U4Zv+AWjWIfbOAWW4g6vohSBr4fCSAA",
+      "mobile": "page-05-800w.webp",
+      "desktop": "page-05-1400w.webp"
+    }
+  ]
+}
