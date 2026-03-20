@@ -1,0 +1,38 @@
+{
+  "menuSlug": "shisha-cigar",
+  "pageCount": 4,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 839,
+      "height": 1190,
+      "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACQBQCdASoUABwAPxFusFCsJiSisBgMAYAiCWwAuy9s67rf/AuzF+qV8e2FIXNCXqjpYYcnwAD+sVAC7Xm4TvgTjz9SKjcOwhDncI+Bt6M/kGzYvB3wOKYEWqB19lcsrZDNfBNoZhUlx1d43sEcYXppLhvYjHVHQn2C6GV70cCrFe5/rM0OXc0id7j6gzqlwAA=",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 839,
+      "height": 1190,
+      "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAwBQCdASoUABwAPwluqFArpiOisAwBcCEJagCuLf/gO7I0aD8rFxA5DGRaQCebh/E9KAD+WZH6YuokRvPf4pxW0gPWoObVc9WFccY9UPjT2liCNQCh/SOzoHdCQdT33Zv6Jp77s39FbkJkoN0FMgaEoGsATwtBH27O60U2Mg+0chK6iqidJY05S0Howgw+dxFwAA==",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    },
+    {
+      "pageNum": 3,
+      "width": 839,
+      "height": 1190,
+      "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAACQBQCdASoUABwAPwlwq1ArpqOisAwBcCEJagC7M6ZGcsC/xwOMxcNFi3Oojq8P+Atv7i/jQAD+j/0vFSV5MEAbT2Fq4AHkMARKb4JNcv9qmE1aRA0s0f+2iJ1GtJjKwhucJgVZpjwWItAfc6iLu3alzoHdfNYM51afybpRwnc3FvQAAAA=",
+      "mobile": "page-03-800w.webp",
+      "desktop": "page-03-1400w.webp"
+    },
+    {
+      "pageNum": 4,
+      "width": 839,
+      "height": 1190,
+      "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABwBQCdASoUABwAPxF4s1CsJ6SisAgBgCIJbAC7L9SB0TcuhLFA3Qmx5+Vpt4zLt5whNDsAAP5Zf3AW9Fnxt5F93mMYMIlNdlLvAlJI7Tx8GcjYMpB4pgTld94J80V6vRzWd9snvn7Hu6Nl2UmRY5MbnhKMq+rkIHkrK2B3dEH+OoIAAAA=",
+      "mobile": "page-04-800w.webp",
+      "desktop": "page-04-1400w.webp"
+    }
+  ]
+}
