@@ -21,7 +21,7 @@ export default function IndexPage() {
           <Link
             key={r.slug}
             href={`/${r.slug}`}
-            className="flex items-center gap-3 bg-surface-card rounded-xl px-4 py-3 transition-colors hover:bg-surface-elevated"
+            className="flex items-center gap-3 bg-surface-card rounded-xl px-4 py-3 transition-colors hover:bg-surface-elevated border border-black/5"
           >
             <span className="material-symbols-rounded text-primary">restaurant</span>
             <div>

@@ -11,7 +11,6 @@ interface BookCardProps {
 }
 
 export default function BookCard({ menu, href, logoUrl }: BookCardProps) {
-  const isFeatured = !!menu.featured;
   const bookColor = menu.color || "#00C4B3";
 
   return (
@@ -19,11 +18,9 @@ export default function BookCard({ menu, href, logoUrl }: BookCardProps) {
       <motion.div
         className="relative flex flex-col items-center justify-end overflow-hidden"
         style={{
-          width: isFeatured ? 140 : 110,
-          height: isFeatured ? 200 : 170,
-          background: isFeatured
-            ? `linear-gradient(135deg, #1a1a2e 0%, #0d0d1a 100%)`
-            : `linear-gradient(135deg, ${bookColor} 0%, ${bookColor}cc 100%)`,
+          width: 120,
+          height: 180,
+          background: `linear-gradient(135deg, ${bookColor} 0%, ${bookColor}cc 100%)`,
           borderRadius: "3px 8px 8px 3px",
           boxShadow:
             "4px 6px 20px rgba(0,0,0,0.5), inset 6px 0 12px rgba(0,0,0,0.25)",
@@ -51,59 +48,18 @@ export default function BookCard({ menu, href, logoUrl }: BookCardProps) {
           }}
         />
 
-        {/* Featured gold accents */}
-        {isFeatured && (
-          <>
-            <div
-              className="absolute top-3 left-3 right-3 h-px"
-              style={{
-                background:
-                  "linear-gradient(90deg, transparent, #D4A853, transparent)",
-              }}
-            />
-            <div
-              className="absolute bottom-12 left-3 right-3 h-px"
-              style={{
-                background:
-                  "linear-gradient(90deg, transparent, #D4A853, transparent)",
-              }}
-            />
-            <div className="absolute top-0 right-4 flex flex-col items-center">
-              <div
-                className="w-6 h-8 flex items-end justify-center pb-0.5"
-                style={{
-                  background: "#D4A853",
-                  clipPath:
-                    "polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%)",
-                }}
-              >
-                <span
-                  className="text-[8px] text-black leading-none"
-                  style={{ marginBottom: 4 }}
-                >
-                  ★
-                </span>
-              </div>
-            </div>
-          </>
-        )}
-
-        {/* Restaurant logo — transparent PNG on cover */}
+        {/* Restaurant logo */}
         {logoUrl && (
           <div
             className="absolute inset-0 flex items-center justify-center pointer-events-none"
-            style={{
-              padding: isFeatured ? "16px 18px 48px" : "12px 14px 42px",
-            }}
+            style={{ padding: "12px 14px 42px" }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={logoUrl}
               alt=""
               className="w-full h-full object-contain"
-              style={{
-                filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.3))",
-              }}
+              style={{ filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.3))" }}
             />
           </div>
         )}

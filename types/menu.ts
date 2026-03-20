@@ -44,8 +44,6 @@ export interface MenuMeta {
   color?: string;
   /** Subtitle shown on the book spine */
   subtitle?: string;
-  /** Whether this is a featured/premium book (larger, gold accents) */
-  featured?: boolean;
   /** Restaurant this menu belongs to */
   restaurant?: string;
   /** Language variants — if present, viewer shows a language picker */

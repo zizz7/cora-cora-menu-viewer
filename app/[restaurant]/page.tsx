@@ -17,14 +17,13 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
   return (
     <main className="min-h-screen bg-surface">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-surface/95 backdrop-blur-sm border-b border-white/5">
+      <header className="sticky top-0 z-50 bg-surface/95 backdrop-blur-sm border-b border-black/5">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={restaurant.logoUrl}
             alt={restaurant.name}
             className="h-8 w-auto object-contain"
-            style={{ filter: "brightness(0) invert(1)" }}
           />
           <div>
             <h1 className="font-heading text-lg font-bold text-on-surface leading-tight">
@@ -60,7 +59,7 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/5 py-6 text-center">
+      <footer className="border-t border-black/5 py-6 text-center">
         <p className="font-body text-[11px] text-on-surface-muted">
           © 2025 Cora Cora Maldives. All rights reserved.
         </p>
