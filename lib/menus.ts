@@ -49,7 +49,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage",
+        title: "Premium\nAll Inclusive\nBeverage",
         subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
@@ -59,7 +59,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage",
+        title: "Exclusive\nBeverage",
         subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
@@ -111,7 +111,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage",
+        title: "Premium\nAll Inclusive\nBeverage",
         subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
@@ -121,7 +121,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage",
+        title: "Exclusive\nBeverage",
         subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
@@ -183,7 +183,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage",
+        title: "Premium\nAll Inclusive\nBeverage",
         subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
@@ -193,7 +193,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage",
+        title: "Exclusive\nBeverage",
         subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
@@ -211,7 +211,7 @@ export const RESTAURANTS: Restaurant[] = [
     menus: [
       {
         slug: "mycoffee-menu",
-        title: "Beverages & Snacks",
+        title: "Beverages\n&\nSnacks",
         subtitle: "Menu",
         category: "Café",
         pageCount: 0,
@@ -246,7 +246,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage",
+        title: "Premium\nAll Inclusive\nBeverage",
         subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
@@ -256,7 +256,7 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage",
+        title: "Exclusive\nBeverage",
         subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,

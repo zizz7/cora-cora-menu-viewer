@@ -68,7 +68,7 @@ export default function BookCard({ menu, href, logoUrl }: BookCardProps) {
         {/* Book text */}
         <div className="relative z-10 pb-3 pt-1 text-center w-full" style={{ paddingLeft: "18px", paddingRight: "8px" }}>
           <p
-            className="font-heading text-xs font-bold leading-tight text-white"
+            className="font-heading text-xs font-bold leading-tight text-white whitespace-pre-line"
             style={{ textShadow: "0 1px 3px rgba(0,0,0,0.5)" }}
           >
             {menu.title}
