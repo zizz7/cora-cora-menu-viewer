@@ -1,0 +1,22 @@
+{
+  "menuSlug": "tazaa-lunch-rus",
+  "pageCount": 2,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACQBACdASoUABwAPxF+tlWsJ6SjKAgBgCIJZQDE2A9mzgol4wCSbY+QbSP0BAAA/tdcpPKqasae+SfsjZ3uYOme4OO/G718I0nmGIb/UnsGY9QMwgHGr0n2DdEXJz1zxwxC8mMLGtWAAAAA",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwBACdASoUABwAPxF2slGsJySiqA1RgCIJZQC7ABEcqx5uan7h7Sx9vM9EGIAAAP7qrtWRA3nqmjlAiBuoO+OkLo5qB47JWn1Ik+ydmGtxCYWjo91uR7mok3l0VrfD5jf6DYAA",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    }
+  ]
+}

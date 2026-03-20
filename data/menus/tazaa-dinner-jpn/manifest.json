@@ -1,0 +1,22 @@
+{
+  "menuSlug": "tazaa-dinner-jpn",
+  "pageCount": 2,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABwAwCdASoUABwAPxGAuFWsKCUjKAgBgCIJZwAAMWYkV+pwzAAA/uF09XzAH3grwuCr2W7jaSfu3VttuyVx5BsE7aW8Jgbk7ARs3dUf43p4Lxep+2VHBhzQAAA=",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAwCdASoUABwAPxF+tlWsJ6SjKAgBgCIJZ2qZ5+AESiQAAP7vaRZ/UIvZkG/ZOMcpm93qkwW3ACnxEbPY1e1cv1ac2rpeM7jT78GK+dzBdXzupjAAAA==",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    }
+  ]
+}

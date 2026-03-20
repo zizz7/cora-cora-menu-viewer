@@ -94,6 +94,13 @@ export const RESTAURANTS: Restaurant[] = [
         coverUrl: "/data/menus/tazaa-lunch/cover.webp",
         color: "#FFA168",
         restaurant: "tazaa",
+        variants: [
+          { lang: "eng", label: "EN", slug: "tazaa-lunch" },
+          { lang: "chn", label: "中文", slug: "tazaa-lunch-chn" },
+          { lang: "ger", label: "DE", slug: "tazaa-lunch-ger" },
+          { lang: "jpn", label: "日本語", slug: "tazaa-lunch-jpn" },
+          { lang: "rus", label: "РУ", slug: "tazaa-lunch-rus" },
+        ],
       },
       {
         slug: "tazaa-dinner",
@@ -106,6 +113,9 @@ export const RESTAURANTS: Restaurant[] = [
         restaurant: "tazaa",
         variants: [
           { lang: "eng", label: "EN", slug: "tazaa-dinner" },
+          { lang: "chn", label: "中文", slug: "tazaa-dinner-chn" },
+          { lang: "ger", label: "DE", slug: "tazaa-dinner-ger" },
+          { lang: "jpn", label: "日本語", slug: "tazaa-dinner-jpn" },
           { lang: "rus", label: "РУ", slug: "tazaa-dinner-rus" },
         ],
       },

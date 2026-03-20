@@ -1,0 +1,22 @@
+{
+  "menuSlug": "tazaa-dinner-ger",
+  "pageCount": 2,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoUABwAPxF+tlWsJ6SjKAgBgCIJZwDN/BI//Bv+6Tv5hnbPAAD+4XT1fMAfeCvC2L/wmTrkxCbgLoS5q2xanw9rXsCJdXPR26oSy9uY71/T9WHgVtdnHAAA",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAwCdASoUABwAPxF+tlWsJ6SjKAgBgCIJZ2UFAB9OczLQAP7vGijf6q+1ry5Uj9nFX2wuszBY0u1vHuSfLcEt6Ke2oZAuV18Jfj1b++ka0LPU1NKS472+lawrxaAA",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    }
+  ]
+}

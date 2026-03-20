@@ -1,0 +1,22 @@
+{
+  "menuSlug": "tazaa-lunch-chn",
+  "pageCount": 2,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQBACdASoUABwAPxGAtlWsJ6SjKAgBgCIJZ0wAV5kGqSA4yBE0c5AJtAAAAP7XXKTyotKyOyvs1EvAyYHjyOoTQBkF5AIYfTkjMkq2Gpnrku7T54iPzjHdCVdk2FvBi97CM5UvBzaQRYLWAAA=",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQBACdASoUABwAPxF6slQsJyQjKAqpgCIJZwDE2BbJIRe2OGAFxdZTW6b4GAAA/u7vkNQ15/Dpon0Mzdmp14cvn4GsN6dxc+dUTTBCTJvYuK0837pj7pZbAYAutQgbbuCxgiCy03aQh0waAAAAAA==",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    }
+  ]
+}

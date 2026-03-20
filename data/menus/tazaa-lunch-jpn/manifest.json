@@ -1,0 +1,22 @@
+{
+  "menuSlug": "tazaa-lunch-jpn",
+  "pageCount": 2,
+  "pages": [
+    {
+      "pageNum": 1,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAwCdASoUABwAPxF+slSsKCQjKAqpgCIJZ1/2VR0LDYCQZ7kzfVcAAP7u7jvmeWvQ/83jDqHUVQ3aJe0Ig0xm/lFhH6GF7/mkiPNBhiLdNfwi8i7uFTgA",
+      "mobile": "page-01-800w.webp",
+      "desktop": "page-01-1400w.webp"
+    },
+    {
+      "pageNum": 2,
+      "width": 1190,
+      "height": 1683,
+      "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoUABwAPxF6sFKsJ6QiqA1RgCIJZ1uWWukK8D3MmLS+MsEAAP7vGKRc+nwHSXvbpG8n7/uBH0NNlXdTFg1oBqtcLZ2lU/BXnAcWMNWWUL0An3NB7efbSU+GrMAAAA==",
+      "mobile": "page-02-800w.webp",
+      "desktop": "page-02-1400w.webp"
+    }
+  ]
+}
