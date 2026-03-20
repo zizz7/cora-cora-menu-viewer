@@ -88,12 +88,12 @@ export default function BookCard({ menu, href, logoUrl }: BookCardProps) {
           </>
         )}
 
-        {/* Restaurant logo — transparent watermark centered on cover */}
+        {/* Restaurant logo — transparent PNG on cover */}
         {logoUrl && (
           <div
             className="absolute inset-0 flex items-center justify-center pointer-events-none"
             style={{
-              padding: isFeatured ? "20px 20px 50px" : "14px 16px 44px",
+              padding: isFeatured ? "16px 18px 48px" : "12px 14px 42px",
             }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -102,9 +102,7 @@ export default function BookCard({ menu, href, logoUrl }: BookCardProps) {
               alt=""
               className="w-full h-full object-contain"
               style={{
-                opacity: 0.15,
-                mixBlendMode: "soft-light",
-                filter: "brightness(2.5)",
+                filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.3))",
               }}
             />
           </div>
