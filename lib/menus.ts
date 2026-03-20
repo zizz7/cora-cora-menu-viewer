@@ -110,16 +110,6 @@ export const RESTAURANTS: Restaurant[] = [
         ],
       },
       {
-        slug: "tazaa-teppanyaki",
-        title: "Teppanyaki",
-        subtitle: "Menu",
-        category: "Dining",
-        pageCount: 0,
-        coverUrl: "/data/menus/tazaa-teppanyaki/cover.webp",
-        color: "#00C4B3",
-        restaurant: "tazaa",
-      },
-      {
         slug: "beverage",
         title: "Premium All Inclusive Beverage Menu",
         subtitle: "",
@@ -215,7 +205,7 @@ export const RESTAURANTS: Restaurant[] = [
   },
   {
     slug: "my-coffee",
-    name: "My Coffee®",
+    name: "MYCOFFEE®",
     tagline: "Beverages & Snacks",
     logoUrl: "/logos/my-coffee.png",
     menus: [
