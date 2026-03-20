@@ -49,8 +49,8 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage Menu",
-        subtitle: "",
+        title: "Premium All Inclusive Beverage",
+        subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
         coverUrl: "/data/menus/beverage/cover.webp",
@@ -59,8 +59,8 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage Menu",
-        subtitle: "",
+        title: "Exclusive Beverage",
+        subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
         coverUrl: "/data/menus/beverage-exclusive/cover.webp",
@@ -111,8 +111,8 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage Menu",
-        subtitle: "",
+        title: "Premium All Inclusive Beverage",
+        subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
         coverUrl: "/data/menus/beverage/cover.webp",
@@ -121,8 +121,8 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage Menu",
-        subtitle: "",
+        title: "Exclusive Beverage",
+        subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
         coverUrl: "/data/menus/beverage-exclusive/cover.webp",
@@ -183,8 +183,8 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage Menu",
-        subtitle: "",
+        title: "Premium All Inclusive Beverage",
+        subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
         coverUrl: "/data/menus/beverage/cover.webp",
@@ -193,8 +193,8 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage Menu",
-        subtitle: "",
+        title: "Exclusive Beverage",
+        subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
         coverUrl: "/data/menus/beverage-exclusive/cover.webp",
@@ -211,8 +211,8 @@ export const RESTAURANTS: Restaurant[] = [
     menus: [
       {
         slug: "mycoffee-menu",
-        title: "Coffee Menu",
-        subtitle: "",
+        title: "Coffee",
+        subtitle: "Menu",
         category: "Café",
         pageCount: 0,
         coverUrl: "/data/menus/mycoffee-menu/cover.webp",
@@ -246,8 +246,8 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage",
-        title: "Premium All Inclusive Beverage Menu",
-        subtitle: "",
+        title: "Premium All Inclusive Beverage",
+        subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
         coverUrl: "/data/menus/beverage/cover.webp",
@@ -256,8 +256,8 @@ export const RESTAURANTS: Restaurant[] = [
       },
       {
         slug: "beverage-exclusive",
-        title: "Exclusive Beverage Menu",
-        subtitle: "",
+        title: "Exclusive Beverage",
+        subtitle: "Menu",
         category: "Beverages",
         pageCount: 0,
         coverUrl: "/data/menus/beverage-exclusive/cover.webp",
