@@ -23,7 +23,7 @@ export default function BookcaseGrid({ menus, restaurantSlug, logoUrl }: Bookcas
               key={menu.slug}
               menu={menu}
               href={`/${restaurantSlug}/${menu.slug}`}
-              logoUrl={logoUrl}
+              logoUrl={menu.logoUrl || logoUrl}
             />
           ))}
         </div>

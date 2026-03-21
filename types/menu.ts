@@ -48,6 +48,8 @@ export interface MenuMeta {
   restaurant?: string;
   /** Language variants — if present, viewer shows a language picker */
   variants?: MenuVariant[];
+  /** Optional per-menu logo override (e.g. CCM logo for beverage books) */
+  logoUrl?: string;
 }
 
 /** Restaurant definition */

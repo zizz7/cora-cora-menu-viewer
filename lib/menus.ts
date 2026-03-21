@@ -56,6 +56,7 @@ export const RESTAURANTS: Restaurant[] = [
         coverUrl: "/data/menus/beverage/cover.webp",
         color: "#00C4B3",
         restaurant: "teien",
+        logoUrl: "/logos/ccm.png",
       },
       {
         slug: "beverage-exclusive",
@@ -66,6 +67,7 @@ export const RESTAURANTS: Restaurant[] = [
         coverUrl: "/data/menus/beverage-exclusive/cover.webp",
         color: "#97CAEB",
         restaurant: "teien",
+        logoUrl: "/logos/ccm.png",
       },
     ],
   },
@@ -118,6 +120,7 @@ export const RESTAURANTS: Restaurant[] = [
         coverUrl: "/data/menus/beverage/cover.webp",
         color: "#00C4B3",
         restaurant: "tazaa",
+        logoUrl: "/logos/ccm.png",
       },
       {
         slug: "beverage-exclusive",
@@ -128,6 +131,7 @@ export const RESTAURANTS: Restaurant[] = [
         coverUrl: "/data/menus/beverage-exclusive/cover.webp",
         color: "#97CAEB",
         restaurant: "tazaa",
+        logoUrl: "/logos/ccm.png",
       },
     ],
   },
@@ -190,6 +194,7 @@ export const RESTAURANTS: Restaurant[] = [
         coverUrl: "/data/menus/beverage/cover.webp",
         color: "#00C4B3",
         restaurant: "acquapazza",
+        logoUrl: "/logos/ccm.png",
       },
       {
         slug: "beverage-exclusive",
@@ -200,6 +205,7 @@ export const RESTAURANTS: Restaurant[] = [
         coverUrl: "/data/menus/beverage-exclusive/cover.webp",
         color: "#97CAEB",
         restaurant: "acquapazza",
+        logoUrl: "/logos/ccm.png",
       },
     ],
   },
@@ -253,6 +259,7 @@ export const RESTAURANTS: Restaurant[] = [
         coverUrl: "/data/menus/beverage/cover.webp",
         color: "#00C4B3",
         restaurant: "gingermoon",
+        logoUrl: "/logos/ccm.png",
       },
       {
         slug: "beverage-exclusive",
@@ -263,6 +270,7 @@ export const RESTAURANTS: Restaurant[] = [
         coverUrl: "/data/menus/beverage-exclusive/cover.webp",
         color: "#97CAEB",
         restaurant: "gingermoon",
+        logoUrl: "/logos/ccm.png",
       },
     ],
   },
