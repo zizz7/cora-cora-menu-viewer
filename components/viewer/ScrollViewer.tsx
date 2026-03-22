@@ -85,9 +85,6 @@ export default function ScrollViewer({
   // Preload first 3 pages for instant display
   const preloadPages = manifest.pages.slice(0, 3);
 
-  // Detect if this is a landscape menu (width > height)
-  const isLandscape = manifest.pages.length > 0 && manifest.pages[0].width > manifest.pages[0].height;
-
   return (
     <div className="min-h-screen bg-surface">
       {/* Preload first pages so browser fetches them immediately */}
@@ -132,15 +129,8 @@ export default function ScrollViewer({
         </div>
       )}
 
-      <main className="mx-auto" style={{ maxWidth: isLandscape ? "100%" : "900px" }}>
-        <div
-          ref={containerRef}
-          className="flex flex-col"
-          style={{
-            gap: "2px",
-            ...(isLandscape ? { overflowX: "auto", WebkitOverflowScrolling: "touch" } : {}),
-          }}
-        >
+      <main className="mx-auto" style={{ maxWidth: "900px" }}>
+        <div ref={containerRef} className="flex flex-col" style={{ gap: "2px" }}>
           {manifest.pages.map((page) => (
             <MenuPage
               key={`${manifest.menuSlug}-${page.pageNum}`}
@@ -154,7 +144,6 @@ export default function ScrollViewer({
               priority={page.pageNum <= 3}
               onVisible={handleVisible}
               onLoadError={handleLoadError}
-              landscape={isLandscape}
             />
           ))}
         </div>

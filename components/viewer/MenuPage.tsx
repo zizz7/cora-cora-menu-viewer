@@ -13,7 +13,6 @@ export interface MenuPageProps {
   priority: boolean;
   onVisible: (pageNum: number) => void;
   onLoadError: (pageNum: number) => void;
-  landscape?: boolean;
 }
 
 export default function MenuPage({
@@ -27,121 +26,32 @@ export default function MenuPage({
   priority,
   onVisible,
   onLoadError,
-  landscape = false,
 }: MenuPageProps) {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // IntersectionObserver to report visibility
   useEffect(() => {
     if (!isInWindow || !containerRef.current) return;
-
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (entry.isIntersecting) {
-            onVisible(pageNum);
-          }
+          if (entry.isIntersecting) onVisible(pageNum);
         }
       },
       { threshold: 0.5 }
     );
-
     observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, [isInWindow, pageNum, onVisible]);
 
-  const handleLoad = useCallback(() => {
-    setLoaded(true);
-    setError(false);
-  }, []);
+  const handleLoad = useCallback(() => { setLoaded(true); setError(false); }, []);
+  const handleError = useCallback(() => { setError(true); onLoadError(pageNum); }, [pageNum, onLoadError]);
+  const handleRetry = useCallback(() => { setError(false); setLoaded(false); }, []);
 
-  const handleError = useCallback(() => {
-    setError(true);
-    onLoadError(pageNum);
-  }, [pageNum, onLoadError]);
-
-  const handleRetry = useCallback(() => {
-    setError(false);
-    setLoaded(false);
-  }, []);
-
-  // When outside the virtual scroll window, render a placeholder div
   if (!isInWindow) {
     return (
-      <div
-        data-page={pageNum}
-        style={landscape
-          ? { height: "70vh", width: "100%" }
-          : { aspectRatio: `${aspectRatio}` }
-        }
-        className="w-full bg-forest"
-      />
-    );
-  }
-
-  // Landscape pages: fixed height with horizontal scroll for readability
-  if (landscape) {
-    return (
-      <div
-        ref={containerRef}
-        data-page={pageNum}
-        className="relative w-full overflow-x-auto overflow-y-hidden"
-        style={{
-          height: "70vh",
-          WebkitOverflowScrolling: "touch",
-        }}
-      >
-        <div
-          className="relative h-full"
-          style={{ width: `${70 * aspectRatio}vh`, minWidth: "100%" }}
-        >
-          {/* LQIP placeholder */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={lqip}
-            aria-hidden="true"
-            alt=""
-            className="absolute inset-0 h-full w-full object-cover"
-            style={{ filter: "blur(12px)", transform: "scale(1.05)" }}
-          />
-
-          {!error && (
-            /* eslint-disable-next-line @next/next/no-img-element */
-            <img
-              key={`${mobileUrl}-${error}`}
-              src={desktopUrl}
-              srcSet={`${mobileUrl} 800w, ${desktopUrl} 1400w`}
-              sizes="(max-width: 768px) 140vw, 1400px"
-              alt={`Menu page ${pageNum} of ${totalPages}`}
-              loading={priority ? "eager" : "lazy"}
-              // @ts-expect-error fetchpriority not in React types yet
-              fetchpriority={priority ? "high" : "auto"}
-              decoding={priority ? "sync" : "async"}
-              onLoad={handleLoad}
-              onError={handleError}
-              className="absolute inset-0 h-full w-full object-cover"
-              style={{
-                opacity: loaded ? 1 : 0,
-                transition: "opacity 150ms ease-in-out",
-              }}
-            />
-          )}
-
-          {!loaded && !error && (
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div className="w-8 h-8 rounded-full animate-spin" style={{ borderWidth: 3, borderColor: "rgba(255,255,255,0.4)", borderTopColor: "rgba(255,255,255,0.9)", borderStyle: "solid" }} />
-            </div>
-          )}
-
-          {error && (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <button onClick={handleRetry} className="rounded-full bg-amber px-5 py-2 font-body text-sm font-semibold text-forest shadow-lg">Retry</button>
-            </div>
-          )}
-        </div>
-      </div>
+      <div data-page={pageNum} style={{ aspectRatio: `${aspectRatio}` }} className="w-full bg-forest" />
     );
   }
 
@@ -159,10 +69,7 @@ export default function MenuPage({
         aria-hidden="true"
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
-        style={{
-          filter: "blur(12px)",
-          transform: "scale(1.05)",
-        }}
+        style={{ filter: "blur(12px)", transform: "scale(1.05)" }}
       />
 
       {/* Full resolution image */}
@@ -188,25 +95,17 @@ export default function MenuPage({
         />
       )}
 
-      {/* Loading spinner overlay — shows on LQIP until real image loads */}
+      {/* Loading spinner */}
       {!loaded && !error && (
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div
-            className="w-8 h-8 border-3 border-white/40 border-t-white/90 rounded-full animate-spin"
-            style={{ borderWidth: 3 }}
-          />
+          <div className="w-8 h-8 rounded-full animate-spin" style={{ borderWidth: 3, borderColor: "rgba(255,255,255,0.4)", borderTopColor: "rgba(255,255,255,0.9)", borderStyle: "solid" }} />
         </div>
       )}
 
-      {/* Error state with retry button */}
+      {/* Error state */}
       {error && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <button
-            onClick={handleRetry}
-            className="rounded-full bg-amber px-5 py-2 font-body text-sm font-semibold text-forest shadow-lg"
-          >
-            Retry
-          </button>
+          <button onClick={handleRetry} className="rounded-full bg-amber px-5 py-2 font-body text-sm font-semibold text-forest shadow-lg">Retry</button>
         </div>
       )}
     </div>
