@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { RESTAURANTS, getRestaurant } from "@/lib/menus";
 import BookcaseGrid from "@/components/bookcase/BookcaseGrid";
 import { BASE_PATH } from "@/lib/basePath";
@@ -20,6 +21,9 @@ export default async function RestaurantPage({ params }: RestaurantPageProps) {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-surface/95 backdrop-blur-sm border-b border-black/5">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center gap-3">
+          <Link href="/" className="flex items-center justify-center w-8 h-8 -ml-1 rounded-full hover:bg-black/5 transition-colors">
+            <span className="material-symbols-rounded text-on-surface text-xl">arrow_back</span>
+          </Link>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={`${BASE_PATH}${restaurant.logoUrl}`}

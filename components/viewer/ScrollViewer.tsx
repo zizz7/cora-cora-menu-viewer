@@ -38,13 +38,13 @@ export default function ScrollViewer({
   const isInWindow = useVirtualScroll(currentPage, manifest.pageCount);
 
   const handleBack = useCallback(() => {
-    router.push(backUrl);
+    router.replace(backUrl);
   }, [router, backUrl]);
 
   useEffect(() => {
     window.history.pushState({ viewer: true }, "");
     const handlePopState = () => {
-      router.push(backUrl);
+      router.replace(backUrl);
     };
     window.addEventListener("popstate", handlePopState);
     return () => window.removeEventListener("popstate", handlePopState);
