@@ -96,9 +96,7 @@ export default function MenuPage({
         }}
       />
 
-      {/* Full resolution image — virtual scroll already limits DOM to ~6 pages,
-          so we always render the img when in window. Browser loading="lazy"
-          handles the rest. */}
+      {/* Full resolution image */}
       {!error && (
         /* eslint-disable-next-line @next/next/no-img-element */
         <img
@@ -108,14 +106,27 @@ export default function MenuPage({
           src={desktopUrl}
           alt={`Menu page ${pageNum} of ${totalPages}`}
           loading={priority ? "eager" : "lazy"}
+          // @ts-expect-error fetchpriority not in React types yet
+          fetchpriority={priority ? "high" : "auto"}
+          decoding={priority ? "sync" : "async"}
           onLoad={handleLoad}
           onError={handleError}
           className="absolute inset-0 h-full w-full object-cover"
           style={{
             opacity: loaded ? 1 : 0,
-            transition: "opacity 300ms ease-in-out",
+            transition: "opacity 150ms ease-in-out",
           }}
         />
+      )}
+
+      {/* Loading spinner overlay — shows on LQIP until real image loads */}
+      {!loaded && !error && (
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div
+            className="w-8 h-8 border-3 border-white/40 border-t-white/90 rounded-full animate-spin"
+            style={{ borderWidth: 3 }}
+          />
+        </div>
       )}
 
       {/* Error state with retry button */}

@@ -82,8 +82,24 @@ export default function ScrollViewer({
 
   const baseUrl = `${cdnBaseUrl}/menus/${manifest.menuSlug}`;
 
+  // Preload first 3 pages for instant display
+  const preloadPages = manifest.pages.slice(0, 3);
+
   return (
     <div className="min-h-screen bg-surface">
+      {/* Preload first pages so browser fetches them immediately */}
+      {preloadPages.map((page) => (
+        <link
+          key={`preload-${page.pageNum}`}
+          rel="preload"
+          as="image"
+          href={`${baseUrl}/${page.mobile}`}
+          // @ts-expect-error fetchpriority not in React types yet
+          fetchpriority="high"
+          imageSrcSet={`${baseUrl}/${page.mobile} 800w, ${baseUrl}/${page.desktop} 1400w`}
+          imageSizes="(max-width: 768px) 100vw, 900px"
+        />
+      ))}
       <ViewerHeader
         title={menuTitle}
         currentPage={currentPage}
@@ -125,7 +141,7 @@ export default function ScrollViewer({
               desktopUrl={`${baseUrl}/${page.desktop}`}
               aspectRatio={page.width / page.height}
               isInWindow={isInWindow(page.pageNum)}
-              priority={page.pageNum <= 2}
+              priority={page.pageNum <= 3}
               onVisible={handleVisible}
               onLoadError={handleLoadError}
             />
